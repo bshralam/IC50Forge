@@ -10,4 +10,7 @@ The primary goal was to gain practical experience with key cheminformatics and M
 - Validates the model and visualizes performance (e.g., R² plot).
 
 3) Tools used:
-Python, RDKit, Pandas, Scikit-learn, Matplotlib. 
+Python, RDKit, Pandas, Scikit-learn, Matplotlib.
+
+<img width="753" height="340" alt="image" src="https://github.com/user-attachments/assets/6096dd96-9708-4b08-ad26-2208fc7009e6" />
+
