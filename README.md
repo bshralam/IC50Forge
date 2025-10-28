@@ -1,13 +1,13 @@
-# IC50-Forge: A Workflow for IC50 Prediction in Cancer Drug Disocvery
+# IC50-Forge: A Workflow for IC50 Prediction in Cancer Drug Discovery
 
 1) Objective:
 This project is a self-directed study to build and validate a machine-learning model for predicting IC50 values for EGFR inhibitors, a key oncology target. 
-The primary goal was to gain practical experience with key cheminformatics and ML libraries (RDKit, Scikit-learn), and to demonstrate a complete data-processing, training and validation workflow. 
 
 2) Key Features:
-- Featurizes molecules from SMILES strings using RDKit.
-- Trains a Random Fores model on the ChEMBL kinase data dataset.
-- Validates the model and visualizes performance (e.g., R² plot).
+- Computes Morgan Fingerprints(radius = 2)/ECFP4 using RDKit,from SMILES strings of a ChEMBL EGFR bioactivity dataset. 
+- Trains a Random Forest regression model to predict pIC50 values.
+- Validates the model and visualizes performance with SHAP analysis.
+- Computes activity cliffs based on Tanimoto similarity.
 
 3) Tools used:
 Python, RDKit, Pandas, Scikit-learn, Matplotlib.
