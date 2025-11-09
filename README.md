@@ -5,9 +5,11 @@ This project is a self-directed study to build and validate a machine-learning m
 
 2) Key Features:
 - Computes Morgan Fingerprints(radius = 2)/ECFP4 using RDKit,from SMILES strings of a ChEMBL EGFR bioactivity dataset. 
-- Trains a Random Forest regression model to predict pIC50 values.
-- Validates the model and visualizes performance with SHAP analysis.
-- Computes activity cliffs based on Tanimoto similarity.
+- Two Random Forest regression models were trained using different molecular representations:
+i) Structure-based model using Morgan fingerprints (ECFP4) to capture substructural features of molecules.
+ii) Property-based model using physicochemical descriptors (Molecular Weight, LogP, H-bond donors/acceptors, TPSA).
+- Model interpreted using SHAP (SHapley Additive exPlanations) to quantify feature importance and visualize how each descriptor influences predicted activity.
+- Activity cliff analysis performed to identify structurally similar molecule pairs (Tanimoto similarity ≥ 0.85) with large potency differences (ΔpIC₅₀ ≥ 1.0).
 
 3) Tools used:
 Python, RDKit, Pandas, Scikit-learn, Matplotlib.
