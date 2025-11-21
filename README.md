@@ -1,8 +1,7 @@
 # IC50-Forge: A Workflow for IC50 Prediction in Cancer Drug Discovery
 
 1) Objective:
-This project is a self-directed study to build and validate a machine-learning model for predicting IC50 values for EGFR inhibitors, a key oncology target. 
-
+This project develops and validates two complementary ligand-based QSAR pipelines for predicting EGFR inhibitor potency (pIC₅₀), using cleaned ChEMBL bioactivity data to train machine-learning models for IC₅₀ prediction for a key oncology target.
 2) Key Features:
 - Computes Morgan Fingerprints(radius = 2)/ECFP4 using RDKit,from SMILES strings of a ChEMBL EGFR bioactivity dataset. 
 - Two Random Forest regression models were trained using different molecular representations:
